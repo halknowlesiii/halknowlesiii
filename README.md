@@ -1,4 +1,5 @@
-<h1>Hi, I'm Hal, an <a href="https://www.linkedin.com/in/hal-knowles-iii/">Identity Access Management Azure Administrator</a>☺</h1>
+<h1>Hi, I'm Hal 
+  Identity Access Management Azure Administrator</h1>
 
 <h2>👨‍💻 Information Technology Projects:</h2>
 
