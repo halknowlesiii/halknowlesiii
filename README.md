@@ -14,7 +14,7 @@ I am an IAM Specialist with hands-on experience configuring, securing, and autom
 ---
 
 ### 📂 Featured Hands-On Projects
-- 🛠️**-[AZ-104 Enterprise Implementation Portfolio](https://github.com/halknowlesiii/-AZ-104-Enterprise-Implementation-Portfolio)
+- 🛠️**-[Enterprise Identity Governance Program](https://github.com/halknowlesiii/-Enterprise Identity Governance Program)
   *Detailed step-by-step documentation, architecture diagrams, and verification for enterprise Azure administration demos (Entra ID tenants, custom domain configurations, RBAC, and virtual networking).*
 
 ---
