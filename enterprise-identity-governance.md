@@ -62,6 +62,5 @@ A new branch office has opened, and **9 new employees** have been onboarded. As 
 
 Below is the verified record from the **Microsoft Entra admin center** demonstrating all 9 newly created accounts active in the tenant:
 
-![Microsoft Entra Users Verification](./images/phase1-users-verification.png)
-
+![Microsoft Entra Users Verification](./phase1-users-verification.png)
 > **Key Takeaway:** Identity is the new security perimeter. By standardizing UPN formats (`@Robinhood305...`) and separating standard accounts from administrative roles from day one, we eliminate account drift and maintain strict audit readiness.
