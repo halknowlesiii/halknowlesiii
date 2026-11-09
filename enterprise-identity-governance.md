@@ -64,3 +64,88 @@ Below is the verified record from the **Microsoft Entra Admin Center** demonstra
 
 ![Microsoft Entra Users Verification](./phase1-users-verification.png)
 > **Key Takeaway:** Identity is the new security perimeter. By standardizing UPN formats (`@Robinhood305...`) and separating standard accounts from administrative roles from Day 1, we eliminate account drift and maintain strict audit readiness.
+
+# 🏢 Phase 02: Group Management 👥
+
+## 🎯 Objective
+Implement scalable identity and access management using Microsoft Entra ID Security Groups to eliminate direct user permission assignments.
+
+---
+
+## 🏢 Business Scenario
+Robinhood305 Financial Services has grown to 50 employees across multiple departments. 
+
+As the Identity Engineer, my manager tells me to:
+> *"Stop assigning access directly to users. We need a scalable way to manage permissions."*
+
+To take ownership of the problem and enforce the principle of least privilege, I start the initiative to replace direct user assignments with centralized departmental security groups.
+
+---
+
+## 📁 Groups Created
+* `GRP-FINANCE-USERS`
+* `GRP-HR-USERS`
+* `GRP-IT-ADMINS`
+* `GRP-MANAGERS`
+* `GRP-SECURITY-TEAM`
+
+---
+
+## 👥 Membership Assignments & Evidence
+
+### 💰 Finance
+* `usr-finance01`
+* `usr-finance02`
+* **Evidence:**
+  * `02.7-Finance-Members.png`
+  * `GRP-FINANCE-USERS1.png`
+  * `GRP-FINANCE-USERS2.png`
+
+### 📋 HR
+* `usr-hr01`
+* `usr-hr02`
+* **Evidence:**
+  * `02.8-HR-Members.png`
+  * `GRP-HR-USERS1.png`
+  * `GRP-HR-USERS2.png`
+
+### 👔 Management
+* `usr-manager01`
+* **Evidence:**
+  * `02.9-Manager-Membership.png`
+  * `GRP-MANAGERS1.png`
+  * `GRP-MANAGERS2.png`
+
+### 💻 IT Administration
+* `adm-global01`
+* `adm-helpdesk01`
+* `adm-identity01`
+* **Evidence:**
+  * `02.10-IT-Admin-Members.png`
+  * `GRP-IT-ADMIN1.png`
+  * `GRP-IT-ADMIN2.png`
+
+### 🛡️ Security
+* `adm-security01`
+* **Evidence:**
+  * `02.11-Security-Team-Members.png`
+  * `GRP-SECURITY-TEAM1.png`
+  * `GRP-SECURITY-TEAM2.png`
+
+---
+
+## ⭐ Security Benefits
+* 🔒 Centralized permission management
+* ⚡ Reduced administrative effort
+* 🔍 Easier auditing
+* ✨ Simplified onboarding
+* 🛡️ Supports Role Based Access Control (RBAC)
+
+---
+
+## ✅ Validation
+Verified user membership assignments within each security group and confirmed administrative and departmental separation.
+
+* **Validation Evidence:**
+  * `02.6-All-Groups-Created.png`
+  * `02.12-Group-Membership-Validation.png`
