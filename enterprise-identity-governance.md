@@ -1,7 +1,7 @@
 # 🚀 PROJECT 1: Enterprise Identity Governance Program
 
 ## 📖 Story
-I am the **Privileged IAM Engineer** for **Robinhood305 & Robinhoodh3a015**. 
+I am the **Privileged IAM Engineer** for **Robinhood305 Financial**. 
 
 The company recently hired **50 employees** and needs a production-grade identity architecture.
 
