@@ -155,3 +155,79 @@ Verified user membership assignments within each security group and confirmed ad
   * ![All Groups Created](./02.6-All-Groups-Created.png)
   * ![Group Membership Validation](./02.12-Group-Membership-Validation.png)
 
+# Phase 03 - Role-Based Access Control (RBAC) 🔐
+
+## 🎯 Objective
+Implement Role-Based Access Control (RBAC) within Microsoft Entra ID to enforce least-privilege administrative access.
+
+## 🏢 Scenario & Context
+Robinhood305 Financial Services has grown to 50 employees. The company already has:
+✅ User accounts
+✅ Security groups
+
+Now leadership has identified a problem. Currently, everyone in IT could potentially have too much access.
+
+Leadership wants: Least Privilege Access
+Meaning: People should only have enough permissions to perform their jobs.
+
+Nothing more.
+
+To address this requirement, administrative responsibilities were separated into distinct roles.
+
+
+> 💡 Analogy:Imagine your school.
+> The principal has a master key.
+> The teacher has classroom keys.
+> The janitor has cleaning closet keys.
+> Each person gets the keys they need. Not every key.
+> RBAC works the same way.
+
+---
+
+## 👥 Roles Assigned
+
+### 🎧 Helpdesk Administrator
+* **Assigned To:** `adm-helpdesk01`[cite: 1]
+* **Responsibilities:**[cite: 1]
+  * Password resets[cite: 1]
+  * User support[cite: 1]
+  * Basic account management[cite: 1]
+
+### 🪪 User Administrator
+* **Assigned To:** `adm-identity01`[cite: 1]
+* **Responsibilities:**[cite: 1]
+  * Create users[cite: 1]
+  * Modify users[cite: 1]
+  * Manage user properties[cite: 1]
+
+### 🛡️ Security Reader
+* **Assigned To:** `adm-security01`[cite: 1]
+* **Responsibilities:**[cite: 1]
+  * Review security information[cite: 1]
+  * View reports[cite: 1]
+  * Monitor security posture[cite: 1]
+
+---
+
+## 📈 Security Benefits
+* 🔒 Enforces least privilege[cite: 1]
+* 📉 Reduces attack surface[cite: 1]
+* ⚖️ Supports separation of duties[cite: 1]
+* 📋 Improves administrative accountability[cite: 1]
+* 🛑 Prevents unnecessary access[cite: 1]
+
+## ✅ Validation
+Validated role assignments through Microsoft Entra ID Roles and Administrators[cite: 1].
+
+Confirmed each administrative account was assigned only the permissions required for its specific job function[cite: 1].
+
+## 📂 Evidence
+* `03.1-Roles-Catalog.png`[cite: 1]
+* `03.2-Helpdesk-Assignment.png`[cite: 1]
+* `03.3-UserAdmin-Assignment.png`[cite: 1]
+* `03.4-SecurityReader-Assignment.png`[cite: 1]
+* `03.5-RBAC-Validation.png`[cite: 1]
+
+## 💡 Lessons Learned
+* RBAC improves security by assigning permissions based on job responsibilities instead of granting broad administrative access[cite: 1].
+* Using dedicated administrative roles reduces organizational risk and supports enterprise security best practices[cite: 1].
