@@ -338,7 +338,8 @@ The **User Administrator** role was assigned as an **Eligible Assignment** to th
 ### 9️⃣ Step 9: Request Pending Approval
 *The activation request enters the **Pending Approval** state, awaiting review by a Privileged Role Administrator.*
 
-![Pending Approval State]<Image src="image_65fa70.png" alt="Pending request screen showing User Administrator role activation awaiting approval" caption="Pending PIM Approval" />
+![Pending Approval State](image_65fa70.png)
+
 ---
 
 ### 🔟 Step 10: Role Activation Confirmation
