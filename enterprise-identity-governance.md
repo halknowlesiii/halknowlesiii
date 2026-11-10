@@ -174,7 +174,7 @@ Nothing more.
 To address this requirement, administrative responsibilities were separated into distinct roles.
 
 
-> 💡 Analogy:Imagine your school.
+> 💡 Analogy: Imagine your school.
 > The principal has a master key.
 > The teacher has classroom keys.
 > The janitor has cleaning closet keys.
