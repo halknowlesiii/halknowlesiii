@@ -154,3 +154,4 @@ Verified user membership assignments within each security group and confirmed ad
 * **Validation Evidence:**
   * ![All Groups Created](./02.6-All-Groups-Created.png)
   * ![Group Membership Validation](./02.12-Group-Membership-Validation.png)
+
