@@ -23,7 +23,7 @@ I will build and document everything step-by-step.
 
 ---
 
-# 🏢 PHASE 1: Building The Company Directory & Provisioning Identities
+# 🏢 PHASE 1 - Building The Company Directory & Provisioning Identities
 
 ## 📖 Scenario & Context
 I am the **Privileged IAM Engineer** for **Robinhood305**. 
