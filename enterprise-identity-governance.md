@@ -162,8 +162,7 @@ Implement Role-Based Access Control (RBAC) within Microsoft Entra ID to enforce 
 
 ## 🏢 Scenario & Context
 Robinhood305 Financial Services has grown to 50 employees. The company already has:
-✅ User accounts
-✅ Security groups
+✅ User accounts & ✅ Security groups
 
 Now leadership has identified a problem. Currently, everyone in IT could potentially have too much access.
 
