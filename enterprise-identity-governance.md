@@ -65,7 +65,7 @@ Below is the verified record from the **Microsoft Entra Admin Center** demonstra
 ![Microsoft Entra Users Verification](./phase1-users-verification.png)
 > **Key Takeaway:** Identity is the new security perimeter. By standardizing UPN formats (`@Robinhood305...`) and separating standard accounts from administrative roles from Day 1, we eliminate account drift and maintain strict audit readiness.
 
-# 🏢 # Phase 02 - Group Management 👥
+# 🏢 # PHASE 02 - Group Management 👥
 
 ## 🎯 Objective
 Implement scalable identity and access management using Microsoft Entra ID Security Groups to eliminate direct user permission assignments.
@@ -155,7 +155,7 @@ Verified user membership assignments within each security group and confirmed ad
   * ![All Groups Created](./02.6-All-Groups-Created.png)
   * ![Group Membership Validation](./02.12-Group-Membership-Validation.png)
 
-# Phase 03 - Role-Based Access Control (RBAC) 🔐
+# PHASE 03 - Role-Based Access Control (RBAC) 🔐
 
 ## 🎯 Objective
 Implement Role-Based Access Control (RBAC) within Microsoft Entra ID to enforce least-privilege administrative access.
