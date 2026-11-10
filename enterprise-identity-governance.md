@@ -173,7 +173,6 @@ Nothing more.
 
 To address this requirement, administrative responsibilities were separated into distinct roles.
 
-
 > 💡 Analogy: Imagine your school.
 > The principal has a master key.
 > The teacher has classroom keys.
@@ -183,50 +182,65 @@ To address this requirement, administrative responsibilities were separated into
 
 ---
 
+## 📂 Roles Catalog Overview
+Here is the overview of the role assignments catalog configured in the tenant:
+![Roles Catalog Overview](03.1-Roles-Catalog.png)
+
+---
+
 ## 👥 Roles Assigned
 
-### 🎧 Helpdesk Administrator:  This user can now help people reset passwords. They still do NOT have full administrator access.
-* **Assigned To:** `adm-helpdesk01`[cite: 1]
-* **Responsibilities:**[cite: 1]
-  * Password resets[cite: 1]
-  * User support[cite: 1]
-  * Basic account management[cite: 1]
+### 🎧 Helpdesk Administrator: This user can now help people reset passwords. They still do NOT have full administrator access.
+- **Assigned To:** `adm-helpdesk01`
+- **Responsibilities:**
+  * Password resets
+  * User support
+  * Basic account management
+
+![Helpdesk Assignment 1](03.2-Helpdesk-Assignment.png)
+![Helpdesk Assignment 2](03.2-Helpdesk-Assignment2.png)
+![Helpdesk Assignment 3](03.2-Helpdesk-Assignment3.png)
 
 ### 🪪 User Administrator: This account can manage users. But it still cannot control everything. That's safer.
-* **Assigned To:** `adm-identity01`[cite: 1]
-* **Responsibilities:**[cite: 1]
-  * Create users[cite: 1]
-  * Modify users[cite: 1]
-  * Manage user properties[cite: 1]
+- **Assigned To:** `adm-identity01`
+- **Responsibilities:**
+  * Create users
+  * Modify users
+  * Manage user properties
+
+![User Admin Assignment 1](03.3-UserAdmin-Assignment.png)
+![User Admin Assignment 2](03.3-UserAdmin-Assignment2.png)
+![User Admin Assignment 3](03.3-UserAdmin-Assignment3.png)
 
 ### 🛡️ Security Reader: This person can look at security information. They're allowed to read. Not change. Like reading a report card without being allowed to edit it.
-* **Assigned To:** `adm-security01`[cite: 1]
-* **Responsibilities:**[cite: 1]
-  * Review security information[cite: 1]
-  * View reports[cite: 1]
-  * Monitor security posture[cite: 1]
+- **Assigned To:** `adm-security01`
+- **Responsibilities:**
+  * Review security information
+  * View reports
+  * Monitor security posture
+
+![Security Reader Assignment 1](03.4-SecurityReader-Assignment.png)
+![Security Reader Assignment 2](03.4-SecurityReader-Assignment2.png)
+![Security Reader Assignment 3](03.4-SecurityReader-Assignment3.png)
 
 ---
 
 ## 📈 Security Benefits
-* 🔒 Enforces least privilege[cite: 1]
-* 📉 Reduces attack surface[cite: 1]
-* ⚖️ Supports separation of duties[cite: 1]
-* 📋 Improves administrative accountability[cite: 1]
-* 🛑 Prevents unnecessary access[cite: 1]
+- 🔒 Enforces least privilege
+- 📉 Reduces attack surface
+- ⚖️ Supports separation of duties
+- 📋 Improves administrative accountability
+- 🛑 Prevents unnecessary access
 
 ## ✅ Validation
-Validated role assignments through Microsoft Entra ID Roles and Administrators[cite: 1].
+Validated role assignments through Microsoft Entra ID Roles and Administrators.
 
-Confirmed each administrative account was assigned only the permissions required for its specific job function[cite: 1].
+Confirmed each administrative account was assigned only the permissions required for its specific job function.
 
-## 📂 Evidence
-* `03.1-Roles-Catalog.png`[cite: 1]
-* `03.2-Helpdesk-Assignment.png`[cite: 1]
-* `03.3-UserAdmin-Assignment.png`[cite: 1]
-* `03.4-SecurityReader-Assignment.png`[cite: 1]
-* `03.5-RBAC-Validation.png`[cite: 1]
+![RBAC Validation 1](03.5-RBAC-Validation1.png)
+![RBAC Validation 2](03.5-RBAC-Validation2.png)
+![RBAC Validation 3](03.5-RBAC-Validation3.png)
 
 ## 💡 Lessons Learned
-* RBAC improves security by assigning permissions based on job responsibilities instead of granting broad administrative access[cite: 1].
-* Using dedicated administrative roles reduces organizational risk and supports enterprise security best practices[cite: 1].
+- RBAC improves security by assigning permissions based on job responsibilities instead of granting broad administrative access.
+- Using dedicated administrative roles reduces organizational risk and supports enterprise security best practices.
