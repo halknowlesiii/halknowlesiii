@@ -79,7 +79,8 @@ As the Identity Engineer, my manager told me to:
 
 To take ownership of the problem and enforce the principle of least privilege, I took the initiative to replace direct user assignments with centralized departmental security groups.
 
-> 💡 **Analogy:** Imagine a teacher has 50 students. Instead of handing a textbook to every student one at a time, the teacher creates a class called:
+> 💡 **Analogy:** Imagine a teacher has 50 students.
+> Instead of handing a textbook to every student one at a time, the teacher creates a class called:
 > Math Class.
 > 
 > Everyone inside the class automatically gets the book.
@@ -174,10 +175,12 @@ Nothing more.
 To address this requirement, administrative responsibilities were separated into distinct roles.
 
 > 💡 Analogy: Imagine your school.
+> 
 > The principal has a master key.
 > The teacher has classroom keys.
 > The janitor has cleaning closet keys.
 > Each person gets the keys they need. Not every key.
+> 
 > RBAC works the same way.
 
 ---
@@ -254,6 +257,19 @@ Implement **Privileged Identity Management (PIM)** within **Microsoft Entra ID**
 
 ## 💼 Scenario & Context
 **Robinhood305 Financial Services** identified a significant security exposure associated with permanent administrative privileges assigned to user accounts. To reduce the attack surface, prevent privilege creep, and support least-privilege administrative access, Microsoft Entra PIM was implemented.
+
+> 💡 Analogy: Imagine your school has a master key.
+> Instead of letting someone keep the master key forever:
+> The principal locks the key in a cabinet.
+>
+> When somebody needs it:
+>
+> They request it.
+> They explain why.
+> They take it temporarily.
+> They return it.
+>
+> PIM is a digital key cabinet.
 
 ---
 
@@ -349,6 +365,13 @@ The **User Administrator** role was assigned as an **Eligible Assignment** to th
 
 ---
 
+### 1️⃣1️⃣ Step 11: Audit History & Compliance Logging
+*Reviewing the comprehensive audit log history capturing role activations, justifications, request timestamps, and administrative actions.*
+
+![PIM Audit History](04.8-PIM-Audit-History.png)
+
+---
+
 ## ✅ Validation & Verification
 
 - [x] **Eligible Role Assignment:** Successfully assigned to `adm-identity01`.
@@ -360,5 +383,3 @@ The **User Administrator** role was assigned as an **Eligible Assignment** to th
 
 ## 💡 Lessons Learned
 Transitioning from **standing administrative access** to **Just-In-Time (JIT) access** through Microsoft Entra PIM significantly hardens identity security. Requiring step-up MFA, mandatory business justifications, and approval workflows ensures complete visibility over privileged actions without hindering daily operational workflows.
-
-
