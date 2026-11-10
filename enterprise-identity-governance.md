@@ -245,6 +245,119 @@ Confirmed each administrative account was assigned only the permissions required
 - RBAC improves security by assigning permissions based on job responsibilities instead of granting broad administrative access.
 - Using dedicated administrative roles reduces organizational risk and supports enterprise security best practices.
 
+# 🛡️ PHASE 04 - Privileged Identity Management (PIM)
 
+## 📌 Objective
+Implement **Privileged Identity Management (PIM)** within **Microsoft Entra ID** to provide secure, time-bound, just-in-time administrative access and enforce the principle of least privilege.
+
+---
+
+## 💼 Scenario & Context
+**Robinhood305 Financial Services** identified a significant security exposure associated with permanent administrative privileges assigned to user accounts. To reduce the attack surface, prevent privilege creep, and support least-privilege administrative access, Microsoft Entra PIM was implemented.
+
+---
+
+## ⚙️ Solution & Policy Configuration
+
+The **User Administrator** role was assigned as an **Eligible Assignment** to the administrative account `adm-identity01`. 
+
+### 🔐 Security Controls Enforced:
+- 🔑 **Multi-Factor Authentication (MFA)** required upon activation.
+- 📝 **Justification Requirement** mandating business reasons for role requests.
+- ⏱️ **Time-Limited Access** capped at a maximum of **8 Hours**.
+- 🛡️ **Approval Workflow** requiring explicit approval from authorized administrators prior to activation.
+
+---
+
+## 📊 Security Benefits
+- 🚫 **Eliminates Standing Privileges:** Reduces permanent admin access across the tenant.
+- ⏳ **Just-In-Time (JIT) Access:** Restricts permissions strictly to operational windows.
+- 🔍 **Enhanced Auditability:** Captures request reasons, approver actions, and activation timestamps.
+- 🛡️ **Reduced Attack Surface:** Limits the impact of credential compromise on administrative accounts.
+
+---
+
+## 🛠️ Step-by-Step Execution & Evidence
+
+### 1️⃣ Step 1: PIM Dashboard & Overview
+*Accessing the Microsoft Entra Privileged Identity Management portal to manage privileges, configure roles, and monitor active assignments.*
+
+![PIM Overview](04.1-PIM-Overview.png)
+
+---
+
+### 2️⃣ Step 2: Reviewing Entra ID Roles & Eligible Assignments
+*Evaluating current role assignments and verifying eligible privileges assigned to administrative accounts.*
+
+![Entra Roles](04.2-Entra-Roles.png)
+
+---
+
+### 3️⃣ Step 3: Assigning the User Administrator Role
+*Configuring `adm-identity01` with an eligible assignment for the User Administrator role.*
+
+![User Administrator Role Assignment](04.3-User-Administrator-Role.png)
+
+---
+
+### 4️⃣ Step 4: Adding Member & Scope Selection
+*Selecting member `adm-identity01` and setting assignment properties within Entra PIM.*
+
+![Eligible Assignment Configuration](04.4-Eligible-Assignment.png)
+
+---
+
+### 5️⃣ Step 5: Configuring Role Guardrails & Settings
+*Enforcing maximum 8-hour duration, Azure MFA requirements, mandatory business justification, and designated approvers.*
+
+![PIM Role Settings](04.5-PIM-Role-Settings.png)
+
+---
+
+### 6️⃣ Step 6: Initial Sign-In & Password Update
+*Signing in as `adm-identity01` to update initial credentials before performing role activation requests.*
+
+![Password Update Request](04.6-PIM-Activation-Request2.png)
+
+---
+
+### 7️⃣ Step 7: Initiating PIM Role Activation
+*Selecting the eligible User Administrator role and triggering the activation sequence.*
+
+![Activation Request Selection](04.6-PIM-Activation-Request.png)
+
+---
+
+### 8️⃣ Step 8: Providing Activation Justification & Duration
+*Entering required business justification ("User Onboarding Activities") and requesting activation for the 8-hour duration.*
+
+![PIM Activation Justification](04.6-PIM-Activation-Request3.png)
+
+---
+
+### 9️⃣ Step 9: Request Pending Approval
+*The activation request enters the **Pending Approval** state, awaiting review by a Privileged Role Administrator.*
+
+![Pending Approval State]<Image src="image_65fa70.png" alt="Pending request screen showing User Administrator role activation awaiting approval" caption="Pending PIM Approval" />
+---
+
+### 🔟 Step 10: Role Activation Confirmation
+*Notification bar confirms the active pending status while awaiting administrative sign-off.*
+
+![Role Activated Pending Status](04.7-PIM-Role-Activated.png)
+
+---
+
+## ✅ Validation & Verification
+
+- [x] **Eligible Role Assignment:** Successfully assigned to `adm-identity01`.
+- [x] **Policy Enforcement:** MFA, business justification, and max 8-hour limits successfully applied.
+- [x] **Approval Workflow:** Request logged and queued for administrative approval.
+- [x] **Audit Trail:** All activation events logged in Entra Audit Logs for compliance reporting.
+
+---
+
+## 💡 Lessons Learned
+Transitioning from **standing administrative access** to **Just-In-Time (JIT) access** through Microsoft Entra PIM significantly hardens identity security. Requiring step-up MFA, mandatory business justifications, and approval workflows ensures complete visibility over privileged actions without hindering daily operational workflows.
 
 
