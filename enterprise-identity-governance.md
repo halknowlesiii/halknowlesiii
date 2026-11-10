@@ -185,21 +185,21 @@ To address this requirement, administrative responsibilities were separated into
 
 ## 👥 Roles Assigned
 
-### 🎧 Helpdesk Administrator
+### 🎧 Helpdesk Administrator:  This user can now help people reset passwords. They still do NOT have full administrator access.
 * **Assigned To:** `adm-helpdesk01`[cite: 1]
 * **Responsibilities:**[cite: 1]
   * Password resets[cite: 1]
   * User support[cite: 1]
   * Basic account management[cite: 1]
 
-### 🪪 User Administrator
+### 🪪 User Administrator: This account can manage users. But it still cannot control everything. That's safer.
 * **Assigned To:** `adm-identity01`[cite: 1]
 * **Responsibilities:**[cite: 1]
   * Create users[cite: 1]
   * Modify users[cite: 1]
   * Manage user properties[cite: 1]
 
-### 🛡️ Security Reader
+### 🛡️ Security Reader: This person can look at security information. They're allowed to read. Not change. Like reading a report card without being allowed to edit it.
 * **Assigned To:** `adm-security01`[cite: 1]
 * **Responsibilities:**[cite: 1]
   * Review security information[cite: 1]
