@@ -244,3 +244,5 @@ Confirmed each administrative account was assigned only the permissions required
 ## 💡 Lessons Learned
 - RBAC improves security by assigning permissions based on job responsibilities instead of granting broad administrative access.
 - Using dedicated administrative roles reduces organizational risk and supports enterprise security best practices.
+
+
