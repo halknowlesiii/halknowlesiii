@@ -72,13 +72,18 @@ Implement scalable identity and access management using Microsoft Entra ID Secur
 
 ---
 
-## 🏢 Business Scenario
+## 🏢 Scenario & Context
 Robinhood305 Financial Services has grown to 50 employees across multiple departments. 
-
 As the Identity Engineer, my manager told me to:
 > *"Stop assigning access directly to users & We need a scalable way to manage permissions."*
 
 To take ownership of the problem and enforce the principle of least privilege, I took the initiative to replace direct user assignments with centralized departmental security groups.
+
+> 💡 **Analogy:** Imagine a teacher has 50 students. Instead of handing a textbook to every student one at a time, the teacher creates a class called:
+> Math Class.
+> 
+> Everyone inside the class automatically gets the book.
+> A group works exactly the same way.
 
 ---
 
