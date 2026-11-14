@@ -714,3 +714,194 @@ Validated the following:
 ## 💡 Lessons Learned
 * Access Reviews provide a governance mechanism for periodically validating user permissions.
 * Regular review cycles help organizations maintain least-privilege access and reduce the risks associated with excessive or outdated permissions.
+
+---
+
+# Phase 08 - Lifecycle Workflows 🔄
+
+## 🎯 Objective
+Implement Microsoft Entra Lifecycle Workflows to automate employee onboarding and offboarding processes within Robinhood305 Financial Services.
+
+## 🏢 Business Scenario
+Robinhood305 Financial Services has continued to grow and now hires and separates employees on a regular basis.
+
+Historically, onboarding and offboarding activities were completed manually by IT administrators.
+
+Manual processes increased the risk of:
+* ⏳ Delayed user provisioning
+* ❌ Missing access assignments
+* 🔓 Incomplete offboarding
+* 👻 Orphaned accounts
+* 📈 Excessive administrative overhead
+
+To solve this problem, Microsoft Entra Lifecycle Workflows were implemented to automate identity-related tasks across the employee lifecycle.
+
+> 💡 **Analogy:**
+> 🏫 Imagine a new student joins school.
+> Every time, the office must:
+> * 📝 Create student record
+> * 📚 Assign classes
+> * 🔐 Give locker
+> * 💳 Give lunch card
+> 
+> 🤖 **Instead of doing this manually, the school creates a checklist that runs automatically.**
+> **That's what Lifecycle Workflows do.**
+
+---
+
+## 📊 Lifecycle Workflows Overview
+Overview of the Microsoft Entra Identity Governance Lifecycle Workflows dashboard and template catalog:
+![Lifecycle Workflows Dashboard](08.1-Lifecycle-Workflows-Dashboard.png)
+![Lifecycle Workflow Template Selection](08.1-Lifecycle-Workflow-Template-Selection.png)
+
+---
+
+## ⚙️ Solution Implemented
+Two Lifecycle Workflows were created:
+
+### 1️⃣ Workflow 1: `Robinhood305 - New Hire Workflow`
+* **Purpose:** Automate onboarding activities for newly hired employees.
+
+### 2️⃣ Workflow 2: `Robinhood305 - Employee Separation Workflow`
+* **Purpose:** Automate identity governance and access removal activities for departing employees.
+
+---
+
+## 🚀 New Hire Workflow Configuration
+* **Workflow Name:** `Robinhood305 - New Hire Workflow`
+* **Workflow Type:** Onboard New Hire Employee
+
+![New Hire Workflow Creation Details](08.2-New-Hire-Workflow-Creation-Detail.png)
+![New Hire Workflow Scope Configuration](08.3-Workflow-Scope.png)
+
+### 🛠️ Tasks Configured
+* **Task 1: Add User To Group**
+  * **Purpose:** Automatically assign newly hired Finance employees to `GRP-FINANCE-USERS`
+* **Task 2: Send Email Notification**
+  * **Purpose:** Automatically notify designated recipients upon onboarding execution
+* **Task 3: Assign Access Package**
+  * **Purpose:** Automatically assign `Finance Employee Access Package` (connects directly to the Entitlement Management solution built during Phase 07)
+
+![New Hire Workflow Tasks Overview](08.4-New-Hire-Workflow-Tasks.png)
+![Add User To Group Task Configuration](08.5-Add-User-To-Group-Task.png)
+![Send Email Notification Task Configuration](08.6-Send-Email-Notifcation.png)
+![Assign Access Package Task Configuration](08.6-Access-Package-Task.png)
+![New Hire Workflow Review and Create](08.5-New-Hire-Workflow-Review.png)
+![New Hire Workflow Created Confirmation](08.6-New-Hire-Workflow-Created.png)
+
+### 💼 New Hire Workflow Business Value
+The workflow automatically:
+* 👥 Adds employees to the proper security groups
+* 📦 Assigns required access packages
+* 📉 Reduces manual onboarding effort
+* 🎯 Improves consistency
+* ⚖️ Enhances governance controls
+
+---
+
+## 🚪 Employee Separation Workflow Configuration
+* **Workflow Name:** `Robinhood305 - Employee Separation Workflow`
+* **Workflow Type:** Offboard an Employee
+* **Purpose:** Ensure that departing employees have access removed in a controlled and repeatable manner.
+
+![Employee Separation Workflow Creation](08.7-Separation-Workflow-Creation.png)
+![Employee Separation Workflow Tasks](08.8-Leaver-Tasks.png)
+![Employee Separation Workflow Review and Create](08.8-Leaver-Tasks1.png)
+
+### 🎯 Offboarding Objectives
+The workflow supports:
+* ⚖️ Identity governance
+* 🚫 Access removal (disables account, removes from all groups, Teams, and access packages)
+* 🛡️ Reduced security risk
+* 📋 Consistent offboarding procedures
+
+---
+
+## 📈 Security Benefits
+Implementation of Lifecycle Workflows provided the following benefits:
+* 🚀 Automated onboarding
+* 🚪 Automated offboarding
+* 📉 Reduced administrative effort
+* ⚖️ Improved governance
+* 🎯 Increased consistency
+* 🛡️ Reduced risk of human error
+* 📑 Better compliance posture
+* 🔍 Improved audit readiness
+
+## ✅ Validation Performed
+Verified:
+* ✅ Lifecycle Workflows feature enabled
+* ✅ New Hire Workflow created
+* ✅ Employee Separation Workflow created
+* ✅ Group assignment tasks configured
+* ✅ Access Package assignment tasks configured
+* ✅ Workflow tasks successfully saved
+* ✅ Workflow templates successfully deployed
+
+![All Lifecycle Workflows Validation](08.10-All-Workflows.png)
+
+## 💡 Lessons Learned
+* Lifecycle Workflows enable organizations to automate identity-related actions throughout the employee lifecycle.
+* By combining onboarding workflows with Entitlement Management, Access Reviews, and Group-Based Access Control, organizations can establish a repeatable and governed access management process.
+* Automation reduces administrative effort while ensuring access provisioning and removal occur consistently and securely.
+
+---
+
+## 🧠 Explain Like I'm 13
+Imagine a checklist that automatically runs whenever somebody joins or leaves a company.
+
+**When someone joins:**
+* 💼 Put them in Finance
+* 🔑 Give them Finance access
+* ✅ Assign permissions
+
+**When someone leaves:**
+* 🚫 Remove access
+* ❌ Remove permissions
+* 🗝️ Take away the digital keys
+
+Instead of depending on people to remember every step, Microsoft Entra follows the checklist automatically. That makes the company safer and helps prevent mistakes.
+
+---
+
+## 🎤 Interview Talking Points
+
+### 🛠️ What Was Implemented
+Implemented Microsoft Entra Lifecycle Workflows to automate onboarding and offboarding for Robinhood305 Financial Services.
+
+Created workflows that automatically:
+* 👥 Added users to security groups
+* 📦 Assigned access packages
+* ⚖️ Supported governance controls
+* 🔄 Standardized employee lifecycle management
+
+### 🎯 Why It Was Implemented
+To reduce manual administrative tasks while ensuring employees consistently received appropriate access and departing employees were removed from the environment securely.
+
+### 💼 Business Value
+* ⚡ Faster onboarding
+* 🚪 Faster offboarding
+* ⚖️ More consistent governance
+* 🛡️ Reduced security risk
+* 📈 Improved scalability
+* 📑 Better audit readiness
+
+---
+
+## 🔗 How This Connects To The Previous Phases
+```text
+Phase 01: User Provisioning
+   ↓
+Phase 02: Security Groups
+   ↓
+Phase 03: RBAC
+   ↓
+Phase 04: Privileged Identity Management (PIM)
+   ↓
+Phase 05: Conditional Access
+   ↓
+Phase 06: Access Reviews
+   ↓
+Phase 07: Entitlement Management
+   ↓
+Phase 08: Lifecycle Workflows
