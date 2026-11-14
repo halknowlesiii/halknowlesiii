@@ -560,6 +560,157 @@ Verified:
 ![Access Review Created Confirmation](06.7-Access-Review-Created.png)
 ![Quarterly Finance Access Review Overview](06.8-Review-Overview.png)
 
+---
+
+# PHASE 07 - Entitlement Management 📦
+
+## 🎯 Objective
+Implement Microsoft Entra Entitlement Management to automate access provisioning, approval workflows, access reviews, and lifecycle governance for business users.
+
+## 🏢 Business Scenario
+Robinhood305 Financial Services employs approximately 50 users across multiple departments.
+
+As the environment continued to grow, manually assigning user access became inefficient and increased the risk of incorrect permissions.
+
+To improve governance and streamline access management, Microsoft Entra Entitlement Management was implemented using Access Packages.
+
+> 💡 **Analogy:**
+> 🍔 Imagine a school cafeteria.
+> Instead of ordering each item separately:
+> * 🥪 Sandwich
+> * 🍟 Chips
+> * 🥤 Drink
+> 
+> 🍱 **You order a combo meal.**
+> The combo meal already contains everything you need.
+> 
+> 📦 **An Access Package works the same way.**
+> * Employees request one package.
+> * Microsoft automatically gives them the correct access.
+> * Every few months a manager checks if they still need it.
+> * If they don't need it anymore, the access expires and gets removed.
+> 
+> 🔒 **This prevents people from keeping access forever and helps keep the environment secure.**
+
+---
+
+## 📊 Entitlement Management Overview
+Initial view of the Microsoft Entra Identity Governance & Entitlement Management dashboard:
+![Entitlement Management Dashboard](07.1-Entitlement-Management-Dashboard.png)
+
+---
+
+## ⚙️ Solution Implemented
+A governed access request process was created using Microsoft Entra Entitlement Management. The following components were configured:
+
+### 📁 Catalog
+* **Created:** Robinhood305 Employee Access Catalog
+* **Purpose:** Provide a central location for employee access resources and access packages.
+
+![New Catalog Form](Robinhood305%20Employee%20Access%20Catalog.png)
+![Catalog Created](07.2-Catalog-Created.png)
+
+### 🔗 Resource Assignment & Roles
+* **Added Resource:** `GRP-FINANCE-USERS` (Role: `Member`)
+* **Purpose:** Provide Finance department users with appropriate group-based access.
+
+![Catalog Resources](07.3-Catalog-Resources.png)
+![Add Resources to Catalog](07.3-Catalog-Resources1.png)
+![Resource Role Assignment Overview](07.5-Resource-Role-Assignment.png)
+![Add Resource Roles to Access Package](07.5-Resource-Role-Assignment1.png)
+
+### 📦 Access Package
+* **Created:** Finance Employee Access Package
+* **Purpose:** Provide approved Finance employees with required departmental access through a single request process.
+
+![New Access Package Basics](07.4-Access-Package-Created1.png)
+![Access Package Review and Create](07.4-Access-Package-Created2.png)
+![Access Package Created Confirmation](07.4-Access-Package-Created3.png)
+
+### 📜 Policy Configuration
+* **Configured:** Initial Policy
+* **Purpose:** Control who can request access, collect justification questions, require manager approval, and configure custom extensions.
+
+![Initial Policy Basics](07.6-Initial-Policy-Basics.png)
+![Requestor Configuration](07.7-Requestor-Configuration.png)
+![Requestor Information Questions](07.8-Requestor-Information.png)
+![Approval Workflow Configuration](07.9-Approval-And-Expiration1.png)
+![Custom Extensions Configuration](07.10-Custom-Extensions.png)
+
+---
+
+## 🔄 Lifecycle Governance Controls
+
+### ⏳ Access Expiration
+* **Assignments expire after:** 90 Days
+* **Purpose:** Prevent unnecessary long-term access.
+
+### 🔁 Access Extensions
+* **Enabled:**
+  * Allow users to request extension
+  * Require approval for extension requests
+* **Purpose:** Ensure continued access remains justified and approved.
+
+### 📋 Access Reviews
+* **Review Frequency:** Quarterly
+* **Review Duration:** 25 Days
+* **Reviewer Type:** Manager (Fallback: `usr-manager01`)
+* **Purpose:** Verify users continue to require Finance access.
+
+![Lifecycle Expiration, Extensions, and Access Reviews](07.9-Access-Expiration-90-Days.png)
+
+---
+
+## 📈 Security Benefits
+Implementation of Entitlement Management provided the following security improvements:
+* 🤖 Automated access provisioning
+* 📉 Reduced manual administration
+* ✅ Approval-based access assignment
+* 🔍 Periodic access validation
+* 🛑 Prevention of access creep
+* 📑 Improved auditability
+* ⏱️ Lifecycle-based access expiration
+* ⚖️ Governance-driven access management
+
+## ✅ Validation Performed
+Validated the following:
+* ✅ Catalog Created
+* ✅ Finance Resource Added
+* ✅ Access Package Created
+* ✅ Resource Roles Assigned
+* ✅ Initial Policy Configured
+* ✅ Access Expiration Enabled
+* ✅ Quarterly Access Reviews Enabled
+* ✅ Manager Reviewer Configured
+* ✅ Extension Approval Enabled
+* ✅ Policy Successfully Saved
+
+![Final Policy Configuration Validation](07.11-Policy-Configured.png)
+
+## 💡 Lessons Learned
+* Microsoft Entra Entitlement Management allows organizations to package access into a structured approval process rather than manually provisioning resources.
+* By combining Access Packages, Access Reviews, Expiration Policies, and Approval Workflows, organizations can establish identity governance controls that improve security while reducing administrative overhead.
+* This approach supports least-privilege access principles and provides a scalable access governance framework.
+
+---
+
+## 🎤 Interview Talking Points
+
+### 🛠️ What Was Implemented
+* Implemented Microsoft Entra Entitlement Management using Access Packages for Finance department users.
+* Created lifecycle governance controls including access expiration, access reviews, manager-based approval processes, and extension approval workflows.
+
+### 🎯 Why It Was Implemented
+* To reduce manual provisioning, improve identity governance, prevent access creep, and ensure that access remained aligned with business requirements.
+
+### 💼 Business Value
+* ⚖️ Improved governance
+* 🛡️ Reduced risk
+* 🚀 Simplified user onboarding
+* 🤖 Automated access management
+* 📑 Increased audit readiness
+* 🔒 Supported least privilege access
+
 ## 💡 Lessons Learned
 * Access Reviews provide a governance mechanism for periodically validating user permissions.
 * Regular review cycles help organizations maintain least-privilege access and reduce the risks associated with excessive or outdated permissions.
