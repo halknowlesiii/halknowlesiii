@@ -25,7 +25,7 @@ I will build and document everything step-by-step.
 
 # 🏢 PHASE 1 - Building The Company Directory & Provisioning Identities
 
-## 📖 Scenario & Context
+## 📖 Business Scenario
 I am the **Privileged IAM Engineer** for **Robinhood305**. 
 
 A new branch office has opened, and **9 new employees** have been onboarded. As the Privileged IAM Engineer, my core responsibility is to provision digital identities in **Microsoft Entra ID** to establish baseline access controls across the tenant.
@@ -72,7 +72,7 @@ Implement scalable identity and access management using Microsoft Entra ID Secur
 
 ---
 
-## 🏢 Scenario & Context
+## 🏢 Business Scenario
 Robinhood305 Financial Services has grown to 50 employees across multiple departments. 
 As the Identity Engineer, my manager told me to:
 > *"Stop assigning access directly to users & We need a scalable way to manage permissions."*
@@ -161,7 +161,7 @@ Verified user membership assignments within each security group and confirmed ad
 ## 🎯 Objective
 Implement Role-Based Access Control (RBAC) within Microsoft Entra ID to enforce least-privilege administrative access.
 
-## 🏢 Scenario & Context
+## 🏢 Business Scenario
 Robinhood305 Financial Services has grown to 50 employees. The company already has:
 ✅ User accounts & ✅ Security groups
 
@@ -255,7 +255,7 @@ Implement **Privileged Identity Management (PIM)** within **Microsoft Entra ID**
 
 ---
 
-## 💼 Scenario & Context
+## 💼 Business Scenario
 **Robinhood305 Financial Services** identified a significant security exposure associated with permanent administrative privileges assigned to user accounts. To reduce the attack surface, prevent privilege creep, and support least-privilege administrative access, Microsoft Entra PIM was implemented.
 
 > 💡 Analogy: Imagine your school has a master key.
@@ -383,3 +383,95 @@ The **User Administrator** role was assigned as an **Eligible Assignment** to th
 
 ## 💡 Lessons Learned
 Transitioning from **standing administrative access** to **Just-In-Time (JIT) access** through Microsoft Entra PIM significantly hardens identity security. Requiring step-up MFA, mandatory business justifications, and approval workflows ensures complete visibility over privileged actions without hindering daily operational workflows.
+
+---
+
+# PHASE 05 - Conditional Access 🛡️
+
+## 🎯 Objective
+Implement Microsoft Entra Conditional Access policies to strengthen authentication security and protect privileged accounts.
+
+## 🏢 Business Scenario
+Robinhood305 Financial Services has successfully implemented:
+
+✅ User Accounts
+
+✅ Security Groups
+
+✅ RBAC
+
+✅ Privileged Identity Management
+
+Management now has a new concern. What if:
+* Someone steals a password?
+* An administrator logs in from an untrusted device?
+* A user tries to sign in without MFA?
+
+Leadership wants: **Stronger security controls without making access difficult for employees.**
+
+I have been tasked with implementing: **Conditional Access Policies**
+
+> 💡 **Analogy:**
+> 🔓 Old lock.
+> 🗝️ Old key.
+> 💥 Easy to break.
+> 
+> 🔐 Modern lock.
+> 🛡️ Harder to break.
+> 
+> ⚠️ **Legacy Authentication is the old lock.**
+
+---
+
+## 📊 Conditional Access Overview
+Overview of the Conditional Access dashboard and active policies configured in the tenant:
+![Conditional Access Overview](05.1-Conditional-Access-Overview.png)
+
+---
+
+## ⚙️ Policies Created
+
+### 1️⃣ CA-MFA-Administrators
+* **Purpose:** Require Multi-Factor Authentication for all administrator accounts.
+* **Target Group:** `GRP-IT-ADMINS`
+* **Controls:** Require MFA
+* **Status:** Report-Only
+
+![MFA Policy Users](05.2-MFA-Policy-Users.png)
+![MFA Policy Users Selection](05.2-MFA-Policy-Users2.png)
+![All Cloud Apps Target](05.3-All-Cloud-Apps.png)
+![Require MFA Control](05.4-Require-MFA-Control.png)
+![Report-Only Mode Setup](05.5-Report-Only-Mode.png)
+
+---
+
+### 2️⃣ CA-Block-Legacy-Authentication
+* **Purpose:** Prevent access using legacy authentication methods.
+* **Target Users:** All Users
+* **Controls:** Block Access
+* **Status:** Report-Only
+
+![Legacy Auth Users Assignment](05.6-Legacy-Auth-Users.png)
+![Legacy Authentication Condition](05.7-Legacy-Authentication-Condition.png)
+![Block Access Control](05.8-Block-Access-Control.png)
+
+---
+
+## 📈 Security Benefits
+* 🔐 Strengthens authentication security
+* 📉 Reduces credential theft risk
+* 🛡️ Supports Zero Trust principles
+* 👑 Protects privileged accounts
+* 🛑 Restricts insecure authentication methods
+
+## ✅ Validation
+Verified:
+* Policies successfully created
+* Correct users and groups assigned
+* MFA requirements configured
+* Legacy authentication restrictions configured
+* Policies available in Conditional Access dashboard
+
+## 💡 Lessons Learned
+* Conditional Access provides adaptive access control by evaluating user, application, and authentication conditions before granting access.
+* Requiring MFA and blocking legacy authentication reduces risk while supporting modern security best practices.
