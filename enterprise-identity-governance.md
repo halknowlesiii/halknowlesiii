@@ -65,6 +65,8 @@ Below is the verified record from the **Microsoft Entra Admin Center** demonstra
 ![Microsoft Entra Users Verification](./phase1-users-verification.png)
 > **Key Takeaway:** Identity is the new security perimeter. By standardizing UPN formats (`@Robinhood305...`) and separating standard accounts from administrative roles from Day 1, we eliminate account drift and maintain strict audit readiness.
 
+---
+
 # 🏢 # PHASE 02 - Group Management 👥
 
 ## 🎯 Objective
@@ -155,6 +157,8 @@ Verified user membership assignments within each security group and confirmed ad
 * **Validation Evidence:**
   * ![All Groups Created](./02.6-All-Groups-Created.png)
   * ![Group Membership Validation](./02.12-Group-Membership-Validation.png)
+
+---
 
 # PHASE 03 - Role-Based Access Control (RBAC) 🔐
 
@@ -247,6 +251,8 @@ Confirmed each administrative account was assigned only the permissions required
 ## 💡 Lessons Learned
 - RBAC improves security by assigning permissions based on job responsibilities instead of granting broad administrative access.
 - Using dedicated administrative roles reduces organizational risk and supports enterprise security best practices.
+
+---
 
 # 🛡️ PHASE 04 - Privileged Identity Management (PIM)
 
@@ -475,3 +481,85 @@ Verified:
 ## 💡 Lessons Learned
 * Conditional Access provides adaptive access control by evaluating user, application, and authentication conditions before granting access.
 * Requiring MFA and blocking legacy authentication reduces risk while supporting modern security best practices.
+
+---
+
+# PHASE 06 - Access Reviews 📋
+
+## 🎯 Objective
+Implement access governance controls through Microsoft Entra Access Reviews.
+
+## 🏢 Business Scenario
+Robinhood305 Financial Services now has 50 employees.
+
+Leadership is concerned about something called: **Access Creep**
+
+**Example:**
+* A person starts in Finance.
+* Then moves to HR.
+* But they still keep their Finance access.
+* Years later nobody remembers.
+* ⚠️ **This is a security risk.**
+
+ I have been asked to create **Quarterly Access Reviews** to ensure users only keep access they actually need.
+
+> 💡 **Analogy:**
+> 📋 Imagine your teacher has a classroom roster.
+> 📅 Every few months, the teacher checks:
+> 
+> ❓ **Does this student still belong in my class?**
+> 
+> 🚫 If the answer is no:
+> 
+> ❌ **The student is removed.**
+> 
+> 🔄 **Access Reviews work exactly the same way.**
+
+---
+
+## 📊 Access Reviews Dashboard
+Initial view of the Microsoft Entra Identity Governance Access Reviews dashboard:
+![Access Review Dashboard](06.1-Access-Review-Dashboard.png)
+
+---
+
+## ⚙️ Access Review Created
+* **Name:** Quarterly Finance Access Review
+* **Scope:** `GRP-FINANCE-USERS`
+* **Reviewer:** `usr-manager01`
+* **Frequency:** Quarterly
+* **Duration:** 30 Days
+
+### 1️⃣ Template Selection & Review Scope
+![New Access Review Form](06.2-New-Access-Review-Form.png)
+![Review Scope Configuration](06.3-Review-Scope.png)
+
+### 2️⃣ Reviewer Assignment & Recurrence Schedule
+![Reviewer Assignment](06.4-Reviewer-Assignment.png)
+![Review Frequency and Duration](06.5-Review-Frequency.png)
+
+### 3️⃣ Completion & Decision Helper Settings
+![Review Settings Configuration](06.6-Review-Settings.png)
+
+---
+
+## 📈 Security Benefits
+* 🛑 Prevents access creep
+* 🧹 Removes unnecessary access
+* ⚖️ Improves governance
+* 📑 Enhances audit readiness
+* 🔒 Supports least privilege
+
+## ✅ Validation
+Verified:
+* Finance Group selected
+* Reviewer assigned
+* Quarterly schedule configured
+* Review successfully created
+
+![Access Review Created Confirmation](06.7-Access-Review-Created.png)
+![Quarterly Finance Access Review Overview](06.8-Review-Overview.png)
+
+## 💡 Lessons Learned
+* Access Reviews provide a governance mechanism for periodically validating user permissions.
+* Regular review cycles help organizations maintain least-privilege access and reduce the risks associated with excessive or outdated permissions.
