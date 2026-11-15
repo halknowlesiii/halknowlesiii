@@ -905,3 +905,41 @@ Phase 06: Access Reviews
 Phase 07: Entitlement Management
    ↓
 Phase 08: Lifecycle Workflows
+```
+---
+
+# 🛡️ Phase 9: Continuous Access Reviews, Automated Remediation & Compliance Auditing
+
+## 📋 Executive Summary & Business Scenario
+**Organization:** Robinhood305 Financial (50 Employees)  
+**Role:** Privileged Identity & Access Management (IAM) Engineer  
+**Regulatory & Compliance Drivers:** SOC 2 Type II, FINRA Audit Readiness, Zero Trust Architecture  
+
+### 💡 Real-World Analogy: The Executive Vault & Keycard Audit
+> Think of an enterprise financial firm like a high-security bank vault. When new employees join or take on special projects, they are issued keycards to specific rooms and trading floors. Over time, employees switch departments or finish projects—but nobody collects their old keycards. Eventually, half the building holds keys to the vault they no longer need. **Access Reviews** act as an automated quarterly security sweep: department heads must actively sign off on every keycard holder, and any unverified or denied keycard is automatically deactivated at the door without waiting for a locksmith.
+
+### The Business Problem
+In fast-moving financial institutions, employees frequently transfer departments, take on temporary project responsibilities, or change job functions. Without automated governance controls, organizations suffer from **privilege creep**—where users retain legacy administrative roles and sensitive financial group memberships (`GRP-FINANCE-USERS`, `GRP-SECURITY-TEAM`) long after their business need expires. Manual spreadsheet audits are error-prone, slow, and fail external compliance scrutiny.
+
+### The Engineering Solution
+To close the identity lifecycle loop at **Robinhood305 Financial**, I engineered and deployed recurring **Microsoft Entra Access Reviews** paired with **automated remediation policies** and **immutable audit logging**. This ensures that both high-privilege security groups and sensitive departmental financial groups are periodically recertified by managers and resource owners, with unauthorized or inactive access automatically revoked without Help Desk intervention.
+
+---
+
+## 🏗️ Governance Architecture Flow
+
+```text
+[Recurring Review Trigger] ──▶ [Manager / Reviewer Attestation in My Access]
+                                      │
+                ┌─────────────────────┴─────────────────────┐
+                ▼                                           ▼
+        [Decision: APPROVED]                        [Decision: DENIED / NO RESPONSE]
+     (Justification Logged)                      (Auto-Apply Policy Triggered)
+                │                                           │
+                ▼                                           ▼
+      [Access Maintained]                      [Permissions Instantly Stripped]
+                │                                           │
+                └─────────────────────┬─────────────────────┘
+                                      ▼
+                   [Immutable Entra Audit Logs Recorded]
+
