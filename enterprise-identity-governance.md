@@ -1,5 +1,8 @@
 # 🚀 PROJECT 1: Enterprise Identity Governance Program
 
+### 🧭 Quick Navigation (Phases 1–9)
+[2️⃣ Phase 1](#phase-01)  • [2️⃣ Phase 2](#phase-02) • [3️⃣ Phase 3](#phase-03) • [4️⃣ Phase 4](#phase-04) • [5️⃣ Phase 5](#phase-05) • [6️⃣ Phase 6](#phase-06) • [7️⃣ Phase 7](#phase-07) • [8️⃣ Phase 8](#phase-08) • [9️⃣ Phase 9](#phase-09)
+
 ## 📖 Story
 I am the **Privileged IAM Engineer** for **Robinhood305 Financial**. 
 
@@ -64,6 +67,7 @@ Below is the verified record from the **Microsoft Entra Admin Center** demonstra
 
 ![Microsoft Entra Users Verification](./phase1-users-verification.png)
 > **Key Takeaway:** Identity is the new security perimeter. By standardizing UPN formats (`@Robinhood305...`) and separating standard accounts from administrative roles from Day 1, we eliminate account drift and maintain strict audit readiness.
+
 
 ---
 
