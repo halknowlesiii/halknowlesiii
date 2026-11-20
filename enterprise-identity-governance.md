@@ -81,7 +81,7 @@ Below is the verified record from the **Microsoft Entra Admin Center** demonstra
 
 ---
 <a id="phase-2"></a>
-🏢 #PHASE 02 - Group Management 👥
+#🏢 #PHASE 02 - Group Management 👥
 
 ## 🎯 Objective
 Implement scalable identity and access management using Microsoft Entra ID Security Groups to eliminate direct user permission assignments.
@@ -176,7 +176,7 @@ Verified user membership assignments within each security group and confirmed ad
 [⬅️ Previous: Phase 01](#phase-1) | [🔝 Back to Top](#top) | [Next: Phase 03 ➡️](#phase-3)
 ---
 <a id="phase-3"></a>
-#PHASE 03 - Role-Based Access Control (RBAC) 🔐
+# 🔐#PHASE 03 - Role-Based Access Control (RBAC) 🔐
 
 ## 🎯 Objective
 Implement Role-Based Access Control (RBAC) within Microsoft Entra ID to enforce least-privilege administrative access.
@@ -273,7 +273,7 @@ Confirmed each administrative account was assigned only the permissions required
 [⬅️ Previous: Phase 02](#phase-2) | [🔝 Back to Top](#top) | [Next: Phase 04 ➡️](#phase-4)
 ---
 <a id="phase-4"></a>
-🛡️ #PHASE 04 - Privileged Identity Management (PIM)
+#🛡️ #PHASE 04 - Privileged Identity Management (PIM)
 
 ## 📌 Objective
 Implement **Privileged Identity Management (PIM)** within **Microsoft Entra ID** to provide secure, time-bound, just-in-time administrative access and enforce the principle of least privilege.
@@ -413,7 +413,7 @@ Transitioning from **standing administrative access** to **Just-In-Time (JIT) ac
 [⬅️ Previous: Phase 03](#phase-3) | [🔝 Back to Top](#top) | [Next: Phase 05 ➡️](#phase-5)
 ---
 <a id="phase-5"></a>
-#🛡️#PHASE05 - Conditional Access 🛡️
+# 🛡️#PHASE 05 - Conditional Access 🛡️
 
 ## 🎯 Objective
 Implement Microsoft Entra Conditional Access policies to strengthen authentication security and protect privileged accounts.
@@ -744,7 +744,7 @@ Validated the following:
 [⬅️ Previous: Phase 07](#phase-7) | [🔝 Back to Top](#top) | [Next: Phase 09 ➡️](#phase-9)
 ---
 <a id="phase-8"></a>
-# 🔄 #Phase 08 - Lifecycle Workflows 🔄
+# 🔄 #PHASE 08 - Lifecycle Workflows 🔄
 
 ## 🎯 Objective
 Implement Microsoft Entra Lifecycle Workflows to automate employee onboarding and offboarding processes within Robinhood305 Financial Services.
