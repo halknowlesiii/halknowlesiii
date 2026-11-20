@@ -1,8 +1,15 @@
 # 🚀 PROJECT 1: Enterprise Identity Governance Program
 
 ### 🧭 Quick Navigation (Phases 1–9)
-[2️⃣ Phase 1](#phase-01)  • [2️⃣ Phase 2](#phase-02) • [3️⃣ Phase 3](#phase-03) • [4️⃣ Phase 4](#phase-04) • [5️⃣ Phase 5](#phase-05) • [6️⃣ Phase 6](#phase-06) • [7️⃣ Phase 7](#phase-07) • [8️⃣ Phase 8](#phase-08) • [9️⃣ Phase 9](#phase-09)
+---
+### 🧭 Phase Navigation
 
+<a id="top"></a>
+
+### 🧭 Quick Jump to Project Phases
+[1️⃣ Phase 1](#phase-1) • [2️⃣ Phase 2](#phase-2) • [3️⃣ Phase 3](#phase-3) • [4️⃣ Phase 4](#phase-4) • [5️⃣ Phase 5](#phase-5) • [6️⃣ Phase 6](#phase-6) • [7️⃣ Phase 7](#phase-7) • [8️⃣ Phase 8](#phase-8) • [9️⃣ Phase 9](#phase-9)
+
+---
 ## 📖 Story
 I am the **Privileged IAM Engineer** for **Robinhood305 Financial**. 
 
@@ -25,8 +32,8 @@ The company recently hired **50 employees** and needs a production-grade identit
 I will build and document everything step-by-step.
 
 ---
-
-# 🏢 PHASE 1 - Building The Company Directory & Provisioning Identities
+<a id="phase-1"></a>
+# 🏢 #PHASE 1 - Building The Company Directory & Provisioning Identities
 
 ## 📖 Business Scenario
 I am the **Privileged IAM Engineer** for **Robinhood305**. 
@@ -68,10 +75,13 @@ Below is the verified record from the **Microsoft Entra Admin Center** demonstra
 ![Microsoft Entra Users Verification](./phase1-users-verification.png)
 > **Key Takeaway:** Identity is the new security perimeter. By standardizing UPN formats (`@Robinhood305...`) and separating standard accounts from administrative roles from Day 1, we eliminate account drift and maintain strict audit readiness.
 
+---
+### 🧭 Phase Navigation
+[🔝 Back to Top](#top) | [Next: Phase 02 ➡️](#phase-2)
 
 ---
-
-# 🏢 # PHASE 02 - Group Management 👥
+<a id="phase-2"></a>
+🏢 #PHASE 02 - Group Management 👥
 
 ## 🎯 Objective
 Implement scalable identity and access management using Microsoft Entra ID Security Groups to eliminate direct user permission assignments.
@@ -161,10 +171,12 @@ Verified user membership assignments within each security group and confirmed ad
 * **Validation Evidence:**
   * ![All Groups Created](./02.6-All-Groups-Created.png)
   * ![Group Membership Validation](./02.12-Group-Membership-Validation.png)
-
 ---
-
-# PHASE 03 - Role-Based Access Control (RBAC) 🔐
+### 🧭 Phase Navigation
+[⬅️ Previous: Phase 01](#phase-1) | [🔝 Back to Top](#top) | [Next: Phase 03 ➡️](#phase-3)
+---
+<a id="phase-3"></a>
+#PHASE 03 - Role-Based Access Control (RBAC) 🔐
 
 ## 🎯 Objective
 Implement Role-Based Access Control (RBAC) within Microsoft Entra ID to enforce least-privilege administrative access.
@@ -255,10 +267,13 @@ Confirmed each administrative account was assigned only the permissions required
 ## 💡 Lessons Learned
 - RBAC improves security by assigning permissions based on job responsibilities instead of granting broad administrative access.
 - Using dedicated administrative roles reduces organizational risk and supports enterprise security best practices.
-
 ---
-
-# 🛡️ PHASE 04 - Privileged Identity Management (PIM)
+---
+### 🧭 Phase Navigation
+[⬅️ Previous: Phase 02](#phase-2) | [🔝 Back to Top](#top) | [Next: Phase 04 ➡️](#phase-4)
+---
+<a id="phase-4"></a>
+🛡️ #PHASE 04 - Privileged Identity Management (PIM)
 
 ## 📌 Objective
 Implement **Privileged Identity Management (PIM)** within **Microsoft Entra ID** to provide secure, time-bound, just-in-time administrative access and enforce the principle of least privilege.
@@ -393,10 +408,12 @@ The **User Administrator** role was assigned as an **Eligible Assignment** to th
 
 ## 💡 Lessons Learned
 Transitioning from **standing administrative access** to **Just-In-Time (JIT) access** through Microsoft Entra PIM significantly hardens identity security. Requiring step-up MFA, mandatory business justifications, and approval workflows ensures complete visibility over privileged actions without hindering daily operational workflows.
-
 ---
-
-# PHASE 05 - Conditional Access 🛡️
+### 🧭 Phase Navigation
+[⬅️ Previous: Phase 03](#phase-3) | [🔝 Back to Top](#top) | [Next: Phase 05 ➡️](#phase-5)
+---
+<a id="phase-5"></a>
+#🛡️#PHASE05 - Conditional Access 🛡️
 
 ## 🎯 Objective
 Implement Microsoft Entra Conditional Access policies to strengthen authentication security and protect privileged accounts.
@@ -487,8 +504,11 @@ Verified:
 * Requiring MFA and blocking legacy authentication reduces risk while supporting modern security best practices.
 
 ---
-
-# PHASE 06 - Access Reviews 📋
+### 🧭 Phase Navigation
+[⬅️ Previous: Phase 04](#phase-4) | [🔝 Back to Top](#top) | [Next: Phase 06 ➡️](#phase-6)
+--- 
+<a id="phase-6"></a>
+#📋#PHASE 06 - Access Reviews 📋
 
 ## 🎯 Objective
 Implement access governance controls through Microsoft Entra Access Reviews.
@@ -563,10 +583,11 @@ Verified:
 
 ![Access Review Created Confirmation](06.7-Access-Review-Created.png)
 ![Quarterly Finance Access Review Overview](06.8-Review-Overview.png)
-
 ---
-
-# PHASE 07 - Entitlement Management 📦
+### 🧭 Phase Navigation
+[⬅️ Previous: Phase 05](#phase-5) | [🔝 Back to Top](#top) | [Next: Phase 07 ➡️](#phase-7)
+#<a id="phase-7"></a>
+# 📦 #PHASE 07 - Entitlement Management 📦
 
 ## 🎯 Objective
 Implement Microsoft Entra Entitlement Management to automate access provisioning, approval workflows, access reviews, and lifecycle governance for business users.
@@ -718,10 +739,12 @@ Validated the following:
 ## 💡 Lessons Learned
 * Access Reviews provide a governance mechanism for periodically validating user permissions.
 * Regular review cycles help organizations maintain least-privilege access and reduce the risks associated with excessive or outdated permissions.
-
 ---
-
-# Phase 08 - Lifecycle Workflows 🔄
+### 🧭 Phase Navigation
+[⬅️ Previous: Phase 07](#phase-7) | [🔝 Back to Top](#top) | [Next: Phase 09 ➡️](#phase-9)
+---
+<a id="phase-8"></a>
+# 🔄 #Phase 08 - Lifecycle Workflows 🔄
 
 ## 🎯 Objective
 Implement Microsoft Entra Lifecycle Workflows to automate employee onboarding and offboarding processes within Robinhood305 Financial Services.
@@ -911,8 +934,8 @@ Phase 07: Entitlement Management
 Phase 08: Lifecycle Workflows
 ```
 ---
-
-# 🛡️ Phase 9: Continuous Access Reviews, Automated Remediation & Compliance Auditing
+<a id="phase-9"></a>
+# 🛡️ #Phase 9: Continuous Access Reviews, Automated Remediation & Compliance Auditing
 
 ## 📋 Executive Summary & Business Scenario
 **Organization:** Robinhood305 Financial (50 Employees)  
@@ -1189,13 +1212,12 @@ Robinhood305 Financial Services now has:
 
 📑 Auditable access-review decisions
 
-💡 Lessons Learned
+💡 Lessons Learned:
+## 🧠 Lessons Learned:
+<Access Reviews provide a critical governance control that helps organizations continuously validate access permissions...
+<Combining reviewer attestation, automatic remediation, and Entra audit logging creates a closed-loop identity governance process that significantly reduces risk and improves compliance readiness.
 
-Access Reviews provide a critical governance control that helps organizations continuously validate access permissions.
-
-Combining reviewer attestation, automatic remediation, and Entra audit logging creates a closed-loop identity governance process that significantly reduces risk and improves compliance readiness.
-
-🧠 Explain Like I'm 13
+🧠 Explain Like I'm 13: 
 
 Imagine a teacher checking the classroom roster every month.
 The teacher asks: "Does every student still belong in this class?"
@@ -1204,7 +1226,7 @@ The teacher asks: "Does every student still belong in this class?"
 
 *If the answer is no: The student is removed.
 
-Microsoft Entra Access Reviews work exactly the same way. Managers regularly verify access, and users who no longer need permissions automatically lose them.
+✔️Microsoft Entra Access Reviews work exactly the same way. Managers regularly verify access, and users who no longer need permissions automatically lose them.
 
 💼 Interview Talking Points
 
@@ -1215,4 +1237,6 @@ Microsoft Entra Access Reviews work exactly the same way. Managers regularly ver
 📈 Business Value: Improved governance, reduced risk, automated remediation, continuous compliance, reduced administrative workload, and enhanced audit readiness.
 
 🔗 How This Connects To Previous Phases: This phase completes the Identity Governance lifecycle by ensuring access remains continuously reviewed, validated, and remediated throughout the employee lifecycle.
-
+---
+### 🧭 Phase Navigation
+[⬅️ Previous: Phase 08](#phase-8) | [🔝 Back to Top](#top)
