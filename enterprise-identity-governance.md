@@ -1017,15 +1017,15 @@ If Reviewer Does Not Respond: Remove Access
 
 🛡️ Security Benefits
 
-Reduces standing privileges
+* Reduces standing privileges
 
-Prevents privilege creep
+* Prevents privilege creep
 
-Supports least privilege
+* Supports least privilege
 
-Improves audit readiness
+* Improves audit readiness
 
-Enhances compliance posture
+* Enhances compliance posture
 
 📸 Evidence
 
