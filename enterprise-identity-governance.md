@@ -81,7 +81,7 @@ Below is the verified record from the **Microsoft Entra Admin Center** demonstra
 
 ---
 <a id="phase-2"></a>
-#🏢 #PHASE 02 - Group Management 👥
+# 🏢#PHASE 02 - Group Management 👥
 
 ## 🎯 Objective
 Implement scalable identity and access management using Microsoft Entra ID Security Groups to eliminate direct user permission assignments.
