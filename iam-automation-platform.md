@@ -1,5 +1,5 @@
-# PROJECT 2
-# 🔐 Robinhood305 Identity Automation Platform 🛡️ 
+# 🛡️ PROJECT 2
+# 🔐 Robinhood305 Identity Automation Platform 
 ---
 <a id="phase-1"></a>
 # 🔌 PHASE 01 - Microsoft Graph Connectivity
