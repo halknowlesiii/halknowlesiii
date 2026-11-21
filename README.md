@@ -1,6 +1,6 @@
 # Greetings, I'm Hal Knowles III! 👋
 
-### ☁️ Azure IAM Engineer |  Privileged Identity Access Management
+### ☁️ Identity & Access Management (IAM) Engineer | Cloud Identity & Security Specialist
 I am an IAM Specialist with hands-on experience configuring, securing, and automating enterprise Microsoft Azure environments and hybrid cloud infrastructure. Currently building production-style labs mirroring real-world Azure Administration scenarios.
 
 ---
