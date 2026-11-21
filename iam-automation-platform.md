@@ -114,7 +114,7 @@ Microsoft Graph provides a secure and scalable mechanism for interacting with Mi
 
 ---
 ### 🧭 Phase Navigation
-[🔝 Back to Top](#top) | [Next: Phase 02 ➡️](#phase-2) | [🛠️ IAM Automation Platform](https://github.com/halknowlesii/iam-automation-platform.md)
+[🔝 Back to Top](#top) | [Next: Phase 02 ➡️](#phase-2) | [🛠️ IAM Automation Platform](https://github.com/halknowlesii/iam-automation-platform)
 
 ## 🎓 Explain Like I'm 13
 Imagine Microsoft Entra ID is a giant school. Normally, an administrator would walk to every classroom and update records manually. Microsoft Graph is like getting access to the school's master computer. Instead of walking around the building, you can type commands and the computer performs the work for you.
