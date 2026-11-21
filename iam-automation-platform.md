@@ -17,7 +17,7 @@ As the organization grows, traditional manual identity administration becomes in
 - 🚪 Offboarding
 - 📊 Reporting
 
-must eventually be automated. Before automation can occur, a secure connection to Microsoft Graph must be established. Microsoft Graph serves as the automation interface that allows PowerShell scripts to interact with Microsoft Entra ID programmatically.
+eventually must be automated. Before automation can occur, a secure connection to Microsoft Graph must be established. Microsoft Graph serves as the automation interface that allows PowerShell scripts to interact with Microsoft Entra ID programmatically.
 
 ## 💡 Analogy
 Imagine a school with hundreds of students. An administrator could walk classroom to classroom manually updating records. However, it is much faster to connect directly to the school's central database and make changes from a control console.
